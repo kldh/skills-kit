@@ -1,0 +1,20 @@
+{
+  "$schema": "https://inlang.com/schema/paraglide-config",
+  "project": "./project.inlang",
+  "outdir": "./src/paraglide",
+  "locales": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "zh",
+    "vi"
+  ],
+  "defaultLocale": "en",
+  "strategy": [
+    "url",
+    "cookie",
+    "baseLocale"
+  ]
+}
