@@ -2,16 +2,13 @@ import { Link, createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useState } from 'react'
 import { HugeiconsIcon } from '@hugeicons/react'
 import {
-  AiChat01Icon,
   ArrowRight01Icon,
   CodeIcon,
-  FlashIcon,
+  CopyIcon,
   LayoutIcon,
-  LicenseIcon,
-  SearchIcon,
+  Tick02Icon,
 } from '@hugeicons/core-free-icons'
 import { getCategoryDisplayName } from '@/lib/i18n'
-import { Input } from '@/components/ui/input'
 import {
   Card,
   CardContent,
@@ -117,6 +114,7 @@ function App() {
   const { skills, categories } = Route.useLoaderData()
   const navigate = useNavigate()
   const [searchQuery, setSearchQuery] = useState('')
+  const [copied, setCopied] = useState(false)
 
   // Get featured skills
   const featuredSkills = [...skills]
@@ -136,6 +134,17 @@ function App() {
     }
   }
 
+  const handleCopy = async () => {
+    const command = 'npx add-skill kldh/skills-kit'
+    try {
+      await navigator.clipboard.writeText(command)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch (err) {
+      console.error('Failed to copy:', err)
+    }
+  }
+
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       {/* Hero Section */}
@@ -143,16 +152,36 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="text-center space-y-8 max-w-4xl mx-auto">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground">
-                {m.hero_title_part1()}{' '}
-                <span className="text-primary">{m.hero_title_highlight()}</span> {m.hero_title_part2()}
+              <h1 className="text-4xl font-bold tracking-tight text-foreground">
+                {m.hero_title()}
               </h1>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-medium">
                 {m.hero_subtitle()}
               </p>
+
+              {/* Install Guide */}
+              <div className="mt-8 flex items-center justify-center">
+                <div className="bg-card border border-border rounded-xl px-6 py-4 shadow-lg flex items-center gap-4 group">
+                  <code className="text-sm font-mono text-foreground">
+                    npx add-skill kldh/skills-kit
+                  </code>
+                  <Button
+                    variant="ghost"
+                    size="icon-sm"
+                    onClick={handleCopy}
+                    className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                    aria-label={copied ? 'Copied!' : 'Copy command'}
+                  >
+                    <HugeiconsIcon
+                      icon={copied ? Tick02Icon : CopyIcon}
+                      className={`w-4 h-4 ${copied ? 'text-green-500' : ''}`}
+                    />
+                  </Button>
+                </div>
+              </div>
             </div>
 
-            {/* Search Bar */}
+            {/* Search Bar
             <form
               onSubmit={handleSearch}
               className="max-w-2xl mx-auto relative group"
@@ -168,7 +197,7 @@ function App() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full h-16 text-lg pl-14 pr-4 bg-card border-border focus:border-primary/50 rounded-2xl transition-all shadow-lg focus:ring-0"
               />
-            </form>
+            </form> */}
           </div>
         </div>
       </section>
@@ -209,7 +238,7 @@ function App() {
         </section>
 
         {/* Featured Cards (Matching "Featured Jobs") */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground mb-4">
               {m.top_trending()}
@@ -296,7 +325,7 @@ function App() {
               </Card>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Categorized Skills (TypeScript, React, etc.) */}
         <div className="space-y-16">
