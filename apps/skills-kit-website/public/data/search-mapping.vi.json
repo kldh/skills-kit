@@ -1,0 +1,398 @@
+{
+  "tags": {
+    "math": {
+      "count": 1,
+      "skills": [
+        "calculator"
+      ]
+    },
+    "calculation": {
+      "count": 1,
+      "skills": [
+        "calculator"
+      ]
+    },
+    "arithmetic": {
+      "count": 1,
+      "skills": [
+        "calculator"
+      ]
+    },
+    "example": {
+      "count": 1,
+      "skills": [
+        "example"
+      ]
+    },
+    "demo": {
+      "count": 1,
+      "skills": [
+        "example"
+      ]
+    },
+    "pet": {
+      "count": 1,
+      "skills": [
+        "pet-health-advice"
+      ]
+    },
+    "health": {
+      "count": 1,
+      "skills": [
+        "pet-health-advice"
+      ]
+    },
+    "care": {
+      "count": 1,
+      "skills": [
+        "pet-health-advice"
+      ]
+    },
+    "veterinary": {
+      "count": 1,
+      "skills": [
+        "pet-health-advice"
+      ]
+    },
+    "advice": {
+      "count": 1,
+      "skills": [
+        "pet-health-advice"
+      ]
+    },
+    "wellness": {
+      "count": 1,
+      "skills": [
+        "pet-health-advice"
+      ]
+    },
+    "react": {
+      "count": 2,
+      "skills": [
+        "reactjs-best-practices",
+        "reactjs-component-generator"
+      ]
+    },
+    "best-practices": {
+      "count": 1,
+      "skills": [
+        "reactjs-best-practices"
+      ]
+    },
+    "patterns": {
+      "count": 1,
+      "skills": [
+        "reactjs-best-practices"
+      ]
+    },
+    "guidelines": {
+      "count": 1,
+      "skills": [
+        "reactjs-best-practices"
+      ]
+    },
+    "typescript": {
+      "count": 2,
+      "skills": [
+        "reactjs-best-practices",
+        "reactjs-component-generator"
+      ]
+    },
+    "component": {
+      "count": 1,
+      "skills": [
+        "reactjs-component-generator"
+      ]
+    },
+    "generator": {
+      "count": 1,
+      "skills": [
+        "reactjs-component-generator"
+      ]
+    },
+    "code-generation": {
+      "count": 1,
+      "skills": [
+        "reactjs-component-generator"
+      ]
+    },
+    "text": {
+      "count": 1,
+      "skills": [
+        "text-processor"
+      ]
+    },
+    "processing": {
+      "count": 1,
+      "skills": [
+        "text-processor"
+      ]
+    },
+    "transformation": {
+      "count": 1,
+      "skills": [
+        "text-processor"
+      ]
+    },
+    "deploy": {
+      "count": 1,
+      "skills": [
+        "vercel-deploy"
+      ]
+    },
+    "vercel": {
+      "count": 1,
+      "skills": [
+        "vercel-deploy"
+      ]
+    },
+    "hosting": {
+      "count": 1,
+      "skills": [
+        "vercel-deploy"
+      ]
+    },
+    "preview": {
+      "count": 1,
+      "skills": [
+        "vercel-deploy"
+      ]
+    },
+    "ci-cd": {
+      "count": 1,
+      "skills": [
+        "vercel-deploy"
+      ]
+    },
+    "automation": {
+      "count": 1,
+      "skills": [
+        "vercel-deploy"
+      ]
+    },
+    "deployment": {
+      "count": 1,
+      "skills": [
+        "vercel-deploy"
+      ]
+    },
+    "cloud": {
+      "count": 1,
+      "skills": [
+        "vercel-deploy"
+      ]
+    },
+    "design": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "ui": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "ux": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "accessibility": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "performance": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "a11y": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "web": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "typography": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "animation": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "forms": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "i18n": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    }
+  },
+  "categories": {
+    "math": {
+      "count": 1,
+      "skills": [
+        "calculator"
+      ]
+    },
+    "utility": {
+      "count": 1,
+      "skills": [
+        "example"
+      ]
+    },
+    "pet-care": {
+      "count": 1,
+      "skills": [
+        "pet-health-advice"
+      ]
+    },
+    "reactjs": {
+      "count": 2,
+      "skills": [
+        "reactjs-best-practices",
+        "reactjs-component-generator"
+      ]
+    },
+    "text": {
+      "count": 1,
+      "skills": [
+        "text-processor"
+      ]
+    },
+    "deployment": {
+      "count": 1,
+      "skills": [
+        "vercel-deploy"
+      ]
+    },
+    "design": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    }
+  },
+  "skills": {
+    "calculator": {
+      "name": "calculator",
+      "description": "Thực hiện các phép toán cơ bản bao gồm cộng, trừ, nhân và chia hai số. Sử dụng khi bạn cần thực hiện các phép tính hoặc nhận kết quả tính toán có định dạng.",
+      "category": "math",
+      "tags": [
+        "math",
+        "calculation",
+        "arithmetic"
+      ]
+    },
+    "example": {
+      "name": "example",
+      "description": "Một kỹ năng ví dụ đơn giản phản hồi lại tin nhắn. Sử dụng làm mẫu hoặc template để tạo kỹ năng mới, kiểm tra tích hợp kỹ năng, hoặc học cách kỹ năng hoạt động.",
+      "category": "utility",
+      "tags": [
+        "example",
+        "demo"
+      ]
+    },
+    "pet-health-advice": {
+      "name": "pet-health-advice",
+      "description": "Cung cấp lời khuyên về sức khỏe thú cưng, mẹo chăm sóc và thông tin y tế cho chó, mèo, chim và các thú cưng phổ biến khác. Sử dụng khi bạn cần hướng dẫn về dinh dưỡng, tập thể dục, chăm sóc phòng ngừa, bệnh thường gặp hoặc dấu hiệu cảnh báo khẩn cấp.",
+      "category": "pet-care",
+      "tags": [
+        "pet",
+        "health",
+        "care",
+        "veterinary",
+        "advice",
+        "wellness"
+      ]
+    },
+    "reactjs-best-practices": {
+      "name": "reactjs-best-practices",
+      "description": "Cung cấp các thực hành tốt nhất, mẫu thiết kế và khuyến nghị cho React.js để xây dựng ứng dụng React chất lượng cao. Sử dụng khi bạn cần hướng dẫn về hooks, tối ưu hóa hiệu suất, quản lý state, thiết kế component hoặc testing.",
+      "category": "reactjs",
+      "tags": [
+        "react",
+        "best-practices",
+        "patterns",
+        "guidelines",
+        "typescript"
+      ]
+    },
+    "reactjs-component-generator": {
+      "name": "reactjs-component-generator",
+      "description": "Tạo mã React component với TypeScript types, bao gồm định nghĩa props, ví dụ styling và ví dụ test. Sử dụng khi tạo boilerplate React component, tạo components với TypeScript types, hoặc thêm định nghĩa props.",
+      "category": "reactjs",
+      "tags": [
+        "react",
+        "component",
+        "generator",
+        "typescript",
+        "code-generation"
+      ]
+    },
+    "text-processor": {
+      "name": "text-processor",
+      "description": "Xử lý và biến đổi văn bản bao gồm chuyển đổi chữ hoa/thường, đảo ngược và các thao tác đếm. Sử dụng khi bạn cần chuyển đổi kiểu chữ, đảo ngược văn bản hoặc đếm từ và ký tự.",
+      "category": "text",
+      "tags": [
+        "text",
+        "processing",
+        "transformation"
+      ]
+    },
+    "vercel-deploy": {
+      "name": "vercel-deploy",
+      "description": "Triển khai ứng dụng web lên Vercel với tự động phát hiện framework, URL xem trước và triển khai có thể nhận. Sử dụng khi triển khai ứng dụng, tạo URL xem trước hoặc chia sẻ bản xem trước trực tiếp với các bên liên quan.",
+      "category": "deployment",
+      "tags": [
+        "deploy",
+        "vercel",
+        "hosting",
+        "preview",
+        "ci-cd",
+        "automation",
+        "deployment",
+        "cloud"
+      ]
+    },
+    "web-design-guidelines": {
+      "name": "web-design-guidelines",
+      "description": "Hướng dẫn thiết kế web và UI/UX toàn diện bao gồm khả năng truy cập, hiệu suất, typography, animations, theming, forms, hình ảnh, điều hướng và quốc tế hóa. Sử dụng khi xây dựng ứng dụng web có khả năng truy cập và hiệu suất cao.",
+      "category": "design",
+      "tags": [
+        "design",
+        "ui",
+        "ux",
+        "accessibility",
+        "performance",
+        "a11y",
+        "web",
+        "typography",
+        "animation",
+        "forms",
+        "i18n"
+      ]
+    }
+  }
+}

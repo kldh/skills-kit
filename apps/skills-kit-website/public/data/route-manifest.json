@@ -1,0 +1,196 @@
+{
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "zh"
+  ],
+  "defaultLanguage": "en",
+  "routes": {
+    "/": [
+      "en"
+    ],
+    "/en/": [
+      "en"
+    ],
+    "/en/skills/": [
+      "en"
+    ],
+    "/en/skills/calculator": [
+      "en"
+    ],
+    "/en/skills/example": [
+      "en"
+    ],
+    "/en/skills/pet-health-advice": [
+      "en"
+    ],
+    "/en/skills/reactjs-best-practices": [
+      "en"
+    ],
+    "/en/skills/reactjs-component-generator": [
+      "en"
+    ],
+    "/en/skills/text-processor": [
+      "en"
+    ],
+    "/en/skills/vercel-deploy": [
+      "en"
+    ],
+    "/en/skills/web-design-guidelines": [
+      "en"
+    ],
+    "/es/": [
+      "es"
+    ],
+    "/es/skills/": [
+      "es"
+    ],
+    "/es/skills/calculator": [
+      "es"
+    ],
+    "/es/skills/example": [
+      "es"
+    ],
+    "/es/skills/pet-health-advice": [
+      "es"
+    ],
+    "/es/skills/reactjs-best-practices": [
+      "es"
+    ],
+    "/es/skills/reactjs-component-generator": [
+      "es"
+    ],
+    "/es/skills/text-processor": [
+      "es"
+    ],
+    "/es/skills/vercel-deploy": [
+      "es"
+    ],
+    "/es/skills/web-design-guidelines": [
+      "es"
+    ],
+    "/fr/": [
+      "fr"
+    ],
+    "/fr/skills/": [
+      "fr"
+    ],
+    "/fr/skills/calculator": [
+      "fr"
+    ],
+    "/fr/skills/example": [
+      "fr"
+    ],
+    "/fr/skills/pet-health-advice": [
+      "fr"
+    ],
+    "/fr/skills/reactjs-best-practices": [
+      "fr"
+    ],
+    "/fr/skills/reactjs-component-generator": [
+      "fr"
+    ],
+    "/fr/skills/text-processor": [
+      "fr"
+    ],
+    "/fr/skills/vercel-deploy": [
+      "fr"
+    ],
+    "/fr/skills/web-design-guidelines": [
+      "fr"
+    ],
+    "/de/": [
+      "de"
+    ],
+    "/de/skills/": [
+      "de"
+    ],
+    "/de/skills/calculator": [
+      "de"
+    ],
+    "/de/skills/example": [
+      "de"
+    ],
+    "/de/skills/pet-health-advice": [
+      "de"
+    ],
+    "/de/skills/reactjs-best-practices": [
+      "de"
+    ],
+    "/de/skills/reactjs-component-generator": [
+      "de"
+    ],
+    "/de/skills/text-processor": [
+      "de"
+    ],
+    "/de/skills/vercel-deploy": [
+      "de"
+    ],
+    "/de/skills/web-design-guidelines": [
+      "de"
+    ],
+    "/ja/": [
+      "ja"
+    ],
+    "/ja/skills/": [
+      "ja"
+    ],
+    "/ja/skills/calculator": [
+      "ja"
+    ],
+    "/ja/skills/example": [
+      "ja"
+    ],
+    "/ja/skills/pet-health-advice": [
+      "ja"
+    ],
+    "/ja/skills/reactjs-best-practices": [
+      "ja"
+    ],
+    "/ja/skills/reactjs-component-generator": [
+      "ja"
+    ],
+    "/ja/skills/text-processor": [
+      "ja"
+    ],
+    "/ja/skills/vercel-deploy": [
+      "ja"
+    ],
+    "/ja/skills/web-design-guidelines": [
+      "ja"
+    ],
+    "/zh/": [
+      "zh"
+    ],
+    "/zh/skills/": [
+      "zh"
+    ],
+    "/zh/skills/calculator": [
+      "zh"
+    ],
+    "/zh/skills/example": [
+      "zh"
+    ],
+    "/zh/skills/pet-health-advice": [
+      "zh"
+    ],
+    "/zh/skills/reactjs-best-practices": [
+      "zh"
+    ],
+    "/zh/skills/reactjs-component-generator": [
+      "zh"
+    ],
+    "/zh/skills/text-processor": [
+      "zh"
+    ],
+    "/zh/skills/vercel-deploy": [
+      "zh"
+    ],
+    "/zh/skills/web-design-guidelines": [
+      "zh"
+    ]
+  }
+}
