@@ -1,0 +1,61 @@
+---
+import Layout from '../../../layouts/Layout.astro'
+import {
+  getAllSkills,
+  getSkillByName,
+  getAllTags,
+  getCategories,
+} from '../../../lib/skills.server'
+import { SkillDetailPage } from '../../../components/skill-detail-page'
+import { getAllLocales, isValidLocale } from '../../../lib/i18n/locales'
+import { buildUrl } from '@/lib/utils'
+
+// Generate paths for all locale/skill combinations
+export function getStaticPaths() {
+  const skills = getAllSkills()
+  const locales = getAllLocales()
+
+  return locales.flatMap((locale) =>
+    skills.map((skill) => ({
+      params: {
+        locale,
+        skillName: skill.metadata.name,
+      },
+    })),
+  )
+}
+
+const { locale, skillName } = Astro.params
+
+if (!locale || !isValidLocale(locale)) {
+  return Astro.redirect('/skills')
+}
+
+if (!skillName) {
+  return Astro.redirect(buildUrl('/skills', { locale }))
+}
+
+const skill = getSkillByName(skillName)
+
+if (!skill) {
+  return Astro.redirect(buildUrl('/skills', { locale }))
+}
+
+const tags = getAllTags()
+const categories = getCategories()
+
+const category = Astro.url.searchParams.get('category') || undefined
+const tag = Astro.url.searchParams.get('tag') || undefined
+---
+
+<Layout title={`${skill.metadata.name} - Skills Kit`} locale={locale}>
+  <SkillDetailPage
+    client:only="react"
+    skill={skill}
+    tags={tags}
+    categories={categories}
+    currentCategory={category}
+    currentTag={tag}
+    locale={locale}
+  />
+</Layout>

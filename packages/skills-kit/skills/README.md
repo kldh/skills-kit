@@ -49,14 +49,12 @@ description: What the skill does and when to use it. Include keywords for discov
 
 ```yaml
 ---
-name: reactjs-best-practices
-description: Provides React.js best practices, patterns, and recommendations. Use when you need guidance on hooks, performance, state management, or component design.
+name: react-best-practices
+description: React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns.
 license: MIT
 metadata:
-  category: reactjs
+  author: vercel
   version: "1.0.0"
-  tags: react, best-practices, patterns, guidelines
-  author: your-org
 ---
 
 # Skill Title
@@ -66,34 +64,13 @@ Skill content in markdown format...
 
 ## Available Skills
 
-### Math Skills
+### React.js & Next.js Skills
 
-- **calculator** - Performs basic mathematical operations (add, subtract, multiply, divide)
+- **react-best-practices** - React and Next.js performance optimization guidelines from Vercel Engineering. Contains 45 rules across 8 categories for writing, reviewing, or refactoring React/Next.js code.
 
-### Text Processing Skills
+### Design & UX Skills
 
-- **text-processor** - Processes and transforms text (uppercase, lowercase, reverse, word count, etc.)
-
-### React.js Skills
-
-- **reactjs-best-practices** - React.js best practices, patterns, and recommendations
-- **reactjs-component-generator** - Generates React component code with TypeScript types
-
-### Pet Care Skills
-
-- **pet-health-advice** - Pet health advice, care tips, and medical information
-
-### Deployment Skills
-
-- **vercel-deploy** - Deploy web applications to Vercel with automatic framework detection and preview URLs
-
-### Design Skills
-
-- **web-design-guidelines** - Comprehensive web design and UI/UX guidelines covering accessibility, performance, and more
-
-### Utility Skills
-
-- **example** - A simple example skill that demonstrates the skill format
+- **web-design-guidelines** - Review UI code for Web Interface Guidelines compliance. Covers accessibility, UX, performance, and best practices for web interfaces.
 
 ## Adding New Skills
 
@@ -130,7 +107,7 @@ import { loadAllSkills, getSkillByName } from "@repo/skills-kit";
 const skills = loadAllSkills();
 
 // Get a specific skill
-const skill = getSkillByName("reactjs-best-practices");
+const skill = getSkillByName("react-best-practices");
 ```
 
 ## References

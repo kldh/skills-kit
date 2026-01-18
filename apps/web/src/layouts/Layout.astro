@@ -1,0 +1,31 @@
+---
+import '../styles.css'
+import { GlobalHeader } from '../components/global-header'
+
+interface Props {
+  title?: string
+  locale?: string
+}
+
+const { title = 'Skills Kit', locale = Astro.currentLocale || 'en' } = Astro.props
+const currentPath = Astro.url.pathname
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Skills Kit - Discover and explore skills for AI agents"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <GlobalHeader locale={locale} currentPath={currentPath} client:load />
+    <slot />
+  </body>
+</html>

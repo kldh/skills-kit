@@ -1,0 +1,40 @@
+---
+import Layout from '../../../layouts/Layout.astro'
+import {
+  getAllSkills,
+  getAllTags,
+  getCategories,
+} from '../../../lib/skills.server'
+import { SkillsGalleryPage } from '../../../components/skills-gallery-page'
+import { getAllLocales, isValidLocale } from '../../../lib/i18n/locales'
+
+export function getStaticPaths() {
+  return getAllLocales().map((locale) => ({
+    params: { locale },
+  }))
+}
+
+const { locale } = Astro.params
+
+if (!locale || !isValidLocale(locale)) {
+  return Astro.redirect('/skills')
+}
+const skills = getAllSkills()
+const categories = getCategories()
+const tags = getAllTags()
+
+const category = Astro.url.searchParams.get('category') || undefined
+const tag = Astro.url.searchParams.get('tag') || undefined
+---
+
+<Layout title="Explore Skills - Skills Kit" locale={locale}>
+  <SkillsGalleryPage
+    client:only="react"
+    skills={skills}
+    categories={categories}
+    tags={tags}
+    currentCategory={category}
+    currentTag={tag}
+    locale={locale}
+  />
+</Layout>

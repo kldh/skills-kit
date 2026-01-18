@@ -1,0 +1,97 @@
+{
+  "tags": {
+    "react": {
+      "count": 1,
+      "skills": [
+        "vercel-react-best-practices"
+      ]
+    },
+    "nextjs": {
+      "count": 1,
+      "skills": [
+        "vercel-react-best-practices"
+      ]
+    },
+    "performance": {
+      "count": 1,
+      "skills": [
+        "vercel-react-best-practices"
+      ]
+    },
+    "optimization": {
+      "count": 1,
+      "skills": [
+        "vercel-react-best-practices"
+      ]
+    },
+    "best-practices": {
+      "count": 1,
+      "skills": [
+        "vercel-react-best-practices"
+      ]
+    },
+    "vercel": {
+      "count": 2,
+      "skills": [
+        "vercel-react-best-practices",
+        "web-design-guidelines"
+      ]
+    },
+    "design": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "ui": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "ux": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "accessibility": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "guidelines": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "a11y": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    },
+    "web": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    }
+  },
+  "categories": {
+    "react": {
+      "count": 1,
+      "skills": [
+        "vercel-react-best-practices"
+      ]
+    },
+    "design": {
+      "count": 1,
+      "skills": [
+        "web-design-guidelines"
+      ]
+    }
+  }
+}
