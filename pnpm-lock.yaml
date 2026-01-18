@@ -18,7 +18,7 @@ importers:
         specifier: 5.9.2
         version: 5.9.2
 
-  apps/skils-kit-website:
+  apps/skills-kit-website:
     dependencies:
       '@base-ui/react':
         specifier: ^1.1.0
