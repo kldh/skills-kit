@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "name": "calculator",
+    "description": "Performs basic mathematical operations including addition, subtraction, multiplication, and division on two numbers. Use when you need to perform arithmetic calculations or get formatted calculation results.",
+    "metadata": {
+      "category": "math",
+      "version": "1.0.0",
+      "tags": [
+        "math",
+        "calculation",
+        "arithmetic"
+      ],
+      "owner": "skills-kit-team",
+      "originalSource": "https://github.com/your-org/skills-kit"
+    },
+    "category": "math",
+    "version": "1.0.0",
+    "tags": [
+      "math",
+      "calculation",
+      "arithmetic"
+    ],
+    "owner": "skills-kit-team",
+    "originalSource": "https://github.com/your-org/skills-kit"
+  },
+  "content": "# Calculator\n\nThis skill performs basic mathematical operations on two numbers. It supports addition, subtraction, multiplication, and division operations.\n\n## When to Use\n\nUse this skill when you need to:\n\n- Perform basic arithmetic calculations\n- Add, subtract, multiply, or divide two numbers\n- Get formatted calculation results\n\n## Supported Operations\n\n- **add** - Add two numbers together\n- **subtract** - Subtract the second number from the first\n- **multiply** - Multiply two numbers\n- **divide** - Divide the first number by the second (division by zero is not allowed)\n\n## Parameters\n\n### Required Parameters\n\n- **operation** (string) - The operation to perform. Must be one of: `add`, `subtract`, `multiply`, `divide`\n- **a** (number) - The first number\n- **b** (number) - The second number\n\n## Output\n\nThe skill returns a markdown-formatted result containing:\n\n- The operation performed\n- The input values\n- The calculated result\n- A formatted mathematical expression\n\n## Examples\n\n### Example 1: Addition\n\n**Input:**\n```json\n{\n  \"operation\": \"add\",\n  \"a\": 5,\n  \"b\": 3\n}\n```\n\n**Output:**\n```markdown\n# Calculation Result\n\n**Operation:** add\n**Input:** 5 add 3\n**Result:** 8\n\n```\n5 + 3 = 8\n```\n```\n\n### Example 2: Multiplication\n\n**Input:**\n```json\n{\n  \"operation\": \"multiply\",\n  \"a\": 4,\n  \"b\": 7\n}\n```\n\n**Output:**\n```markdown\n# Calculation Result\n\n**Operation:** multiply\n**Input:** 4 multiply 7\n**Result:** 28\n\n```\n4 × 7 = 28\n```\n```\n\n## Error Handling\n\n- **Division by zero**: If attempting to divide by zero, the skill will return an error: \"Division by zero is not allowed\"\n- **Unknown operation**: If an invalid operation is provided, the skill will return an error: \"Unknown operation: {operation}\"\n\n## Notes\n\n- All operations work with numeric values\n- Division results may include decimal places\n- The output is always formatted as markdown for easy display\n",
+  "path": "/Users/lekhang/Documents/skills-kit/packages/skills-kit/skills/calculator",
+  "installCount": 7218,
+  "trendingScore": 80,
+  "createdAt": "2025-08-26T01:56:06.769Z",
+  "updatedAt": "2025-12-28T18:35:09.780Z"
+}

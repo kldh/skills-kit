@@ -1,0 +1,133 @@
+[
+  {
+    "name": "calculator",
+    "description": "Performs basic mathematical operations including addition, subtraction, multiplication, and division on two numbers. Use when you need to perform arithmetic calculations or get formatted calculation results.",
+    "category": "math",
+    "tags": [
+      "math",
+      "calculation",
+      "arithmetic"
+    ],
+    "installCount": 7218,
+    "trendingScore": 80,
+    "createdAt": "2025-08-26T01:56:06.769Z",
+    "updatedAt": "2025-12-28T18:35:09.780Z"
+  },
+  {
+    "name": "example",
+    "description": "A simple example skill that echoes back a message. Use as a demonstration or template for creating new skills, testing skill integration, or learning how skills work.",
+    "category": "utility",
+    "tags": [
+      "example",
+      "demo"
+    ],
+    "installCount": 5939,
+    "trendingScore": 66,
+    "createdAt": "2025-08-27T22:54:53.858Z",
+    "updatedAt": "2026-01-17T04:24:55.730Z"
+  },
+  {
+    "name": "pet-health-advice",
+    "description": "Provides pet health advice, care tips, and medical information for dogs, cats, birds, and other common pets. Use when you need guidance on nutrition, exercise, preventive care, common illnesses, or emergency warning signs.",
+    "category": "pet-care",
+    "tags": [
+      "pet",
+      "health",
+      "care",
+      "veterinary",
+      "advice",
+      "wellness"
+    ],
+    "installCount": 7333,
+    "trendingScore": 56,
+    "createdAt": "2025-04-24T22:20:28.935Z",
+    "updatedAt": "2025-12-26T21:39:12.474Z"
+  },
+  {
+    "name": "reactjs-best-practices",
+    "description": "Provides React.js best practices, patterns, and recommendations for building high-quality React applications. Use when you need guidance on hooks, performance optimization, state management, component design, or testing.",
+    "category": "reactjs",
+    "tags": [
+      "react",
+      "best-practices",
+      "patterns",
+      "guidelines",
+      "typescript"
+    ],
+    "installCount": 5626,
+    "trendingScore": 61,
+    "createdAt": "2025-05-27T18:35:39.417Z",
+    "updatedAt": "2025-12-29T06:52:42.903Z"
+  },
+  {
+    "name": "reactjs-component-generator",
+    "description": "Generates React component code with TypeScript types, including props definitions, styling examples, and test examples. Use when generating React component boilerplate, creating TypeScript-typed components, or adding prop definitions.",
+    "category": "reactjs",
+    "tags": [
+      "react",
+      "component",
+      "generator",
+      "typescript",
+      "code-generation"
+    ],
+    "installCount": 1105,
+    "trendingScore": 92,
+    "createdAt": "2025-04-14T03:08:44.839Z",
+    "updatedAt": "2026-01-11T17:08:15.316Z"
+  },
+  {
+    "name": "text-processor",
+    "description": "Processes and transforms text including case conversion, reversal, and counting operations. Use when you need to convert text case, reverse text, or count words and characters.",
+    "category": "text",
+    "tags": [
+      "text",
+      "processing",
+      "transformation"
+    ],
+    "installCount": 848,
+    "trendingScore": 13,
+    "createdAt": "2025-08-28T01:58:28.893Z",
+    "updatedAt": "2025-12-27T08:36:57.539Z"
+  },
+  {
+    "name": "vercel-deploy",
+    "description": "Deploy web applications to Vercel with automatic framework detection, preview URLs, and claimable deployments. Use when deploying apps, creating preview URLs, or sharing live previews with stakeholders.",
+    "category": "deployment",
+    "tags": [
+      "deploy",
+      "vercel",
+      "hosting",
+      "preview",
+      "ci-cd",
+      "automation",
+      "deployment",
+      "cloud"
+    ],
+    "installCount": 280,
+    "trendingScore": 84,
+    "createdAt": "2025-05-06T11:06:00.269Z",
+    "updatedAt": "2026-01-01T17:21:20.736Z"
+  },
+  {
+    "name": "web-design-guidelines",
+    "description": "Comprehensive web design and UI/UX guidelines covering accessibility, performance, typography, animations, theming, forms, images, navigation, and internationalization. Use when building accessible, performant web applications.",
+    "category": "design",
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "accessibility",
+      "performance",
+      "a11y",
+      "web",
+      "typography",
+      "animation",
+      "forms",
+      "i18n"
+    ],
+    "installCount": 8521,
+    "trendingScore": 17,
+    "createdAt": "2025-06-26T00:43:16.281Z",
+    "updatedAt": "2025-12-22T02:19:42.745Z"
+  }
+]

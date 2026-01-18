@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "name": "text-processor",
+    "description": "Processes and transforms text including case conversion, reversal, and counting operations. Use when you need to convert text case, reverse text, or count words and characters.",
+    "metadata": {
+      "category": "text",
+      "version": "1.0.0",
+      "tags": [
+        "text",
+        "processing",
+        "transformation"
+      ],
+      "owner": "skills-kit-team",
+      "originalSource": "https://github.com/your-org/skills-kit"
+    },
+    "category": "text",
+    "version": "1.0.0",
+    "tags": [
+      "text",
+      "processing",
+      "transformation"
+    ],
+    "owner": "skills-kit-team",
+    "originalSource": "https://github.com/your-org/skills-kit"
+  },
+  "content": "# Text Processor\n\nThis skill processes and transforms text using various operations. It supports multiple text manipulation operations including case conversion, reversal, and counting operations.\n\n## When to Use\n\nUse this skill when you need to:\n\n- Convert text case (uppercase, lowercase, capitalize)\n- Reverse text\n- Count words or characters in text\n- Perform basic text transformations\n\n## Supported Operations\n\n- **uppercase** - Convert all characters to uppercase\n- **lowercase** - Convert all characters to lowercase\n- **reverse** - Reverse the order of all characters\n- **word-count** - Count the number of words in the text\n- **char-count** - Count the number of characters in the text\n- **capitalize** - Capitalize the first letter and lowercase the rest\n\n## Parameters\n\n### Required Parameters\n\n- **text** (string) - The text to process\n- **operation** (string) - The operation to perform. Must be one of: `uppercase`, `lowercase`, `reverse`, `word-count`, `char-count`, `capitalize`\n\n### Optional Parameters\n\n- **options** (object) - Additional options for the operation (currently unused)\n\n## Output\n\nThe skill returns a markdown-formatted result containing:\n\n- The operation performed\n- The original text\n- The processed result\n\n## Examples\n\n### Example 1: Convert to Uppercase\n\n**Input:**\n```json\n{\n  \"text\": \"Hello World\",\n  \"operation\": \"uppercase\"\n}\n```\n\n**Output:**\n```markdown\n# Text Processing Result\n\n**Operation:** uppercase\n**Original Text:** Hello World\n**Result:**\n\n```\nHELLO WORLD\n```\n```\n\n### Example 2: Count Words\n\n**Input:**\n```json\n{\n  \"text\": \"Hello World\",\n  \"operation\": \"word-count\"\n}\n```\n\n**Output:**\n```markdown\n# Text Processing Result\n\n**Operation:** word-count\n**Original Text:** Hello World\n**Result:**\n\n```\n2\n```\n```\n\n## Error Handling\n\n- **Unknown operation**: If an invalid operation is provided, the skill will return an error: \"Unknown operation: {operation}\"\n\n## Notes\n\n- Word count splits text by whitespace and filters out empty strings\n- Character count includes all characters including spaces\n- Reverse operation reverses the entire string character by character\n- Capitalize operation capitalizes only the first character and lowercases the rest\n",
+  "path": "/Users/lekhang/Documents/skills-kit/packages/skills-kit/skills/text-processor",
+  "installCount": 848,
+  "trendingScore": 13,
+  "createdAt": "2025-08-28T01:58:28.893Z",
+  "updatedAt": "2025-12-27T08:36:57.539Z"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "vercel-react-best-practices",
+    "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.",
+    "category": "react",
+    "tags": [
+      "react",
+      "nextjs",
+      "performance",
+      "optimization",
+      "best-practices",
+      "vercel"
+    ],
+    "installCount": 3176,
+    "trendingScore": 96,
+    "createdAt": "2025-06-26T17:40:42.015Z",
+    "updatedAt": "2025-11-20T16:28:07.566Z"
+  },
+  {
+    "name": "web-design-guidelines",
+    "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+    "category": "design",
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "accessibility",
+      "guidelines",
+      "a11y",
+      "web",
+      "vercel"
+    ],
+    "installCount": 4189,
+    "trendingScore": 21,
+    "createdAt": "2025-06-02T09:33:49.790Z",
+    "updatedAt": "2025-11-28T20:42:11.900Z"
+  }
+]

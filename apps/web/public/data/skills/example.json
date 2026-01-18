@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "name": "example",
+    "description": "A simple example skill that echoes back a message. Use as a demonstration or template for creating new skills, testing skill integration, or learning how skills work.",
+    "metadata": {
+      "category": "utility",
+      "version": "1.0.0",
+      "tags": [
+        "example",
+        "demo"
+      ],
+      "owner": "skills-kit-team",
+      "originalSource": "https://github.com/your-org/skills-kit"
+    },
+    "category": "utility",
+    "version": "1.0.0",
+    "tags": [
+      "example",
+      "demo"
+    ],
+    "owner": "skills-kit-team",
+    "originalSource": "https://github.com/your-org/skills-kit"
+  },
+  "content": "# Example Skill\n\nThis is a simple example skill that demonstrates the skill format. It takes a message as input and echoes it back in a formatted markdown response.\n\n## When to Use\n\nUse this skill as a demonstration or template for creating new skills. It's useful for:\n\n- Testing skill integration\n- Understanding the skill format\n- Learning how skills work\n\n## Parameters\n\n### Required Parameters\n\n- **message** (string) - The message to echo back\n\n## Output\n\nThe skill returns a markdown-formatted response containing:\n\n- The original message\n- An echoed version of the message\n\n## Examples\n\n### Example 1: Simple Greeting\n\n**Input:**\n```json\n{\n  \"message\": \"Hello, World!\"\n}\n```\n\n**Output:**\n```markdown\n# Example Skill Output\n\n**Message:** Hello, World!\n\n**Echo:** Hello, World!\n```\n\n## Notes\n\nThis is a demonstration skill and serves as a template for creating more complex skills.\n",
+  "path": "/Users/lekhang/Documents/skills-kit/packages/skills-kit/skills/example",
+  "installCount": 5939,
+  "trendingScore": 66,
+  "createdAt": "2025-08-27T22:54:53.858Z",
+  "updatedAt": "2026-01-17T04:24:55.730Z"
+}

@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { join } from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
@@ -164,10 +164,41 @@ async function generateWebData() {
 
   // Output paths
   const dataDir = join(__dirname, "..", "src", "data");
+  const skillsDir = join(dataDir, "skills");
   const skillsJsonPath = join(dataDir, "skills.json");
   const searchMappingPath = join(dataDir, "search-mapping.json");
 
-  // Write skills.json
+  // Ensure skills directory exists
+  mkdirSync(skillsDir, { recursive: true });
+
+  // Write individual skill files
+  for (const skill of webSkills) {
+    const skillFileName = `${skill.metadata.name}.json`;
+    const skillFilePath = join(skillsDir, skillFileName);
+    writeFileSync(skillFilePath, JSON.stringify(skill, null, 2), "utf-8");
+  }
+  console.log(`✓ Generated ${webSkills.length} individual skill files in ${skillsDir}`);
+
+  // Create skills index file (lightweight reference)
+  const skillsIndex = webSkills.map((skill) => ({
+    name: skill.metadata.name,
+    description: skill.metadata.description,
+    category: skill.metadata.category || skill.metadata.metadata?.category,
+    tags: skill.metadata.tags || skill.metadata.metadata?.tags || [],
+    installCount: skill.installCount,
+    trendingScore: skill.trendingScore,
+    createdAt: skill.createdAt,
+    updatedAt: skill.updatedAt,
+  }));
+  const skillsIndexPath = join(skillsDir, "index.json");
+  writeFileSync(
+    skillsIndexPath,
+    JSON.stringify(skillsIndex, null, 2),
+    "utf-8"
+  );
+  console.log(`✓ Generated skills index: ${skillsIndexPath}`);
+
+  // Write skills.json (for backward compatibility)
   writeFileSync(skillsJsonPath, JSON.stringify(webSkills, null, 2), "utf-8");
   console.log(`✓ Generated ${skillsJsonPath}`);
 
@@ -182,6 +213,7 @@ async function generateWebData() {
   // Print summary
   console.log("\n📊 Summary:");
   console.log(`  - Skills: ${webSkills.length}`);
+  console.log(`  - Individual skill files: ${webSkills.length}`);
   console.log(`  - Tags: ${Object.keys(searchMapping.tags).length}`);
   console.log(
     `  - Categories: ${Object.keys(searchMapping.categories).length}`

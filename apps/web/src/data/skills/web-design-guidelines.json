@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "name": "web-design-guidelines",
+    "description": "Review UI code for Web Interface Guidelines compliance. Use when asked to \"review my UI\", \"check accessibility\", \"audit design\", \"review UX\", or \"check my site against best practices\".",
+    "metadata": {
+      "author": "vercel",
+      "version": "1.0.0",
+      "category": "design",
+      "tags": [
+        "design",
+        "ui",
+        "ux",
+        "accessibility",
+        "guidelines",
+        "a11y",
+        "web",
+        "vercel"
+      ],
+      "argument-hint": "<file-or-pattern>",
+      "owner": "vercel",
+      "originalSource": "https://github.com/vercel-labs/agent-skills"
+    },
+    "author": "vercel",
+    "version": "1.0.0",
+    "category": "design",
+    "tags": [
+      "design",
+      "ui",
+      "ux",
+      "accessibility",
+      "guidelines",
+      "a11y",
+      "web",
+      "vercel"
+    ],
+    "argument-hint": "<file-or-pattern>",
+    "owner": "vercel",
+    "originalSource": "https://github.com/vercel-labs/agent-skills"
+  },
+  "content": "# Web Interface Guidelines\n\nReview files for compliance with Web Interface Guidelines.\n\n## How It Works\n\n1. Fetch the latest guidelines from the source URL below\n2. Read the specified files (or prompt user for files/pattern)\n3. Check against all rules in the fetched guidelines\n4. Output findings in the terse `file:line` format\n\n## Guidelines Source\n\nFetch fresh guidelines before each review:\n\n```\nhttps://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md\n```\n\nUse WebFetch to retrieve the latest rules. The fetched content contains all the rules and output format instructions.\n\n## Usage\n\nWhen a user provides a file or pattern argument:\n1. Fetch guidelines from the source URL above\n2. Read the specified files\n3. Apply all rules from the fetched guidelines\n4. Output findings using the format specified in the guidelines\n\nIf no files specified, ask the user which files to review.\n",
+  "path": "/Users/lekhang/Documents/skills-kit/packages/skills-kit/skills/web-design-guidelines",
+  "installCount": 4189,
+  "trendingScore": 21,
+  "createdAt": "2025-06-02T09:33:49.790Z",
+  "updatedAt": "2025-11-28T20:42:11.900Z"
+}
