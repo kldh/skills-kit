@@ -1,4 +1,20 @@
 ---
-// Redirect root to default locale
-return Astro.redirect('/en/')
+import Layout from '../layouts/Layout.astro'
+import { getAllSkills, getCategories } from '../lib/skills.server'
+import { HomePage } from '../components/home-page'
+import { defaultLocale } from '../lib/i18n/locales'
+
+// Root page renders default locale content
+const skills = getAllSkills()
+const categories = getCategories()
+const locale = defaultLocale
 ---
+
+<Layout title="Skills Kit" locale={locale}>
+  <HomePage
+    client:only="react"
+    skills={skills}
+    categories={categories}
+    locale={locale}
+  />
+</Layout>
