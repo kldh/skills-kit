@@ -122,7 +122,7 @@ export function HomePage({ skills, categories, locale = 'en' }: HomePageProps) {
   }));
 
   const handleCopy = async () => {
-    const command = 'npx add-skill kldh/skills-kit';
+    const command = t('install_command', locale);
     try {
       await navigator.clipboard.writeText(command);
       setCopied(true);
@@ -139,23 +139,28 @@ export function HomePage({ skills, categories, locale = 'en' }: HomePageProps) {
         <div className="container mx-auto px-4">
           <div className="relative z-10 text-center space-y-8 max-w-5xl mx-auto">
             {/* Main Heading */}
-            <h1 className="text-7xl tracking-tighter text-balance">
+            <h1 className="text-5xl font-bold leading-0 text-balance">
               <span className="block bg-linear-to-b from-foreground to-foreground/80 bg-clip-text text-transparent">
-                Every skill. Everywhere.<br /> All at once.
+                {t('hero_title', locale)}
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto font-normal">
               {t('hero_subtitle', locale)}
-            </p>
+            </h2>
 
-            {/* Install Command */}
-            <div className="flex items-center justify-center gap-3 max-w-2xl mx-auto">
-              <div className="flex-1 flex items-center gap-3 px-6 py-4 bg-secondary/50 border border-border rounded-xl backdrop-blur-sm">
-                <code className="flex-1 text-sm font-mono text-foreground">
-                  npx add-skill kldh/skills-kit
-                </code>
+            {/* Install Command and CTA */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
+              <div className="flex items-center gap-3 px-6 py-4 bg-secondary/50 border border-border rounded-xl backdrop-blur-sm w-full sm:flex-1">
+                <div className="flex flex-col gap-1 flex-1">
+                  <span className="text-[10px] font-semibold uppercase tracking-wider text-muted-foreground">
+                    {t('install_via_cli', locale)}
+                  </span>
+                  <code className="text-sm font-mono text-foreground">
+                    {t('install_command', locale)}
+                  </code>
+                </div>
                 <Button
                   size="sm"
                   variant="ghost"
@@ -168,6 +173,17 @@ export function HomePage({ skills, categories, locale = 'en' }: HomePageProps) {
                   />
                 </Button>
               </div>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="shrink-0 w-full sm:w-auto"
+              >
+                <a href={buildUrl('/skills', { locale })}>
+                  {t('browse_skills', locale)}
+                  <HugeiconsIcon icon={ArrowRight01Icon} className="w-4 h-4 ml-2" />
+                </a>
+              </Button>
             </div>
 
           </div>
