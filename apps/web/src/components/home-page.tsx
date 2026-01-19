@@ -6,10 +6,13 @@ import {
   CopyIcon,
   LayoutIcon,
   Tick02Icon,
+  Download01Icon,
+  PlayIcon,
 } from '@hugeicons/core-free-icons';
 import type { SkillWithStats } from '@/lib/skills.server';
 import { getCategoryDisplayName } from '@/lib/i18n/astro';
 import { buildUrl } from '@/lib/utils';
+import { t } from '@/lib/i18n/messages';
 import {
   Card,
   CardContent,
@@ -91,7 +94,7 @@ function SkillSection({
           href={buildUrl('/skills', { locale })}
           className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1"
         >
-          View All{' '}
+          {t('view_all', locale)}{' '}
           <HugeiconsIcon icon={ArrowRight01Icon} className="w-4 h-4" />
         </a>
       </div>
@@ -132,38 +135,78 @@ export function HomePage({ skills, categories, locale = 'en' }: HomePageProps) {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       {/* Hero Section */}
-      <section className="pt-24 pb-16">
+      <section className="relative py-24 overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-8 max-w-4xl mx-auto">
-            <div className="space-y-4">
-              <h1 className="text-4xl font-bold tracking-tight text-foreground">
-                Skills Kit
-              </h1>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-medium">
-                Discover and explore skills for AI agents
-              </p>
+          <div className="relative z-10 text-center space-y-8 max-w-5xl mx-auto">
+            {/* Main Heading */}
+            <h1 className="text-7xl tracking-tighter text-balance">
+              <span className="block bg-linear-to-b from-foreground to-foreground/80 bg-clip-text text-transparent">
+                Every skill. Everywhere.<br /> All at once.
+              </span>
+            </h1>
 
-              {/* Install Guide */}
-              <div className="mt-8 flex items-center justify-center">
-                <div className="bg-card border border-border rounded-xl px-6 py-4 shadow-lg flex items-center gap-4 group">
-                  <code className="text-sm font-mono text-foreground">
-                    npx add-skill kldh/skills-kit
-                  </code>
-                  <Button
-                    variant="ghost"
-                    size="icon-sm"
-                    onClick={handleCopy}
-                    className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
-                    aria-label={copied ? 'Copied!' : 'Copy command'}
-                  >
-                    <HugeiconsIcon
-                      icon={copied ? Tick02Icon : CopyIcon}
-                      className={`w-4 h-4 ${copied ? 'text-green-500' : ''}`}
-                    />
-                  </Button>
-                </div>
+            {/* Subtitle */}
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              {t('hero_subtitle', locale)}
+            </p>
+
+            {/* Install Command */}
+            <div className="flex items-center justify-center gap-3 max-w-2xl mx-auto">
+              <div className="flex-1 flex items-center gap-3 px-6 py-4 bg-secondary/50 border border-border rounded-xl backdrop-blur-sm">
+                <code className="flex-1 text-sm font-mono text-foreground">
+                  npx add-skill kldh/skills-kit
+                </code>
+                <Button
+                  size="sm"
+                  variant="ghost"
+                  className="shrink-0 h-8 px-3"
+                  onClick={handleCopy}
+                >
+                  <HugeiconsIcon
+                    icon={copied ? Tick02Icon : CopyIcon}
+                    className="w-4 h-4"
+                  />
+                </Button>
               </div>
             </div>
+
+          </div>
+
+          {/* Decorative Graphics - Scattered around like Family.co */}
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            {/* Left side decorations */}
+            <div className="absolute left-[5%] top-[20%] w-32 h-32 bg-blue-400/20 rounded-full" />
+            <div className="absolute left-[8%] top-[45%] w-24 h-24 bg-green-400/20 rounded-full" />
+            <div className="absolute left-[12%] bottom-[25%] w-20 h-20 bg-yellow-400/20 rounded-full" />
+
+            {/* Right side decorations */}
+            <div className="absolute right-[8%] top-[15%] w-28 h-28 bg-orange-400/20 rounded-full" />
+            <div className="absolute right-[5%] top-[50%] w-36 h-36 bg-purple-400/15 rounded-full" />
+            <div className="absolute right-[10%] bottom-[20%] w-24 h-24 bg-pink-400/20 rounded-full" />
+
+            {/* Center blur effects */}
+            <div className="absolute left-1/4 top-1/3 w-40 h-40 bg-primary/10 rounded-full blur-3xl" />
+            <div className="absolute right-1/4 top-1/2 w-48 h-48 bg-accent/10 rounded-full blur-3xl" />
+
+            {/* Stars and sparkles */}
+            <svg className="absolute left-[15%] top-[30%] w-8 h-8 text-yellow-400/60" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" />
+            </svg>
+            <svg className="absolute right-[18%] top-[35%] w-6 h-6 text-blue-400/60" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" />
+            </svg>
+            <svg className="absolute left-[20%] bottom-[30%] w-7 h-7 text-green-400/60" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" />
+            </svg>
+            <svg className="absolute right-[15%] bottom-[35%] w-5 h-5 text-purple-400/60" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" />
+            </svg>
+
+            {/* Small dots */}
+            <div className="absolute left-[25%] top-[25%] w-3 h-3 bg-orange-400/40 rounded-full" />
+            <div className="absolute right-[25%] top-[28%] w-2 h-2 bg-blue-400/40 rounded-full" />
+            <div className="absolute left-[30%] bottom-[40%] w-2.5 h-2.5 bg-green-400/40 rounded-full" />
+            <div className="absolute right-[28%] bottom-[38%] w-3 h-3 bg-pink-400/40 rounded-full" />
           </div>
         </div>
       </section>
@@ -173,13 +216,13 @@ export function HomePage({ skills, categories, locale = 'en' }: HomePageProps) {
         <section>
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
-              Featured Categories
+              {t('featured_categories', locale)}
             </h3>
             <a
               href={buildUrl('/skills', { locale })}
               className="text-[10px] font-bold uppercase tracking-widest text-primary hover:underline"
             >
-              View All
+              {t('view_all', locale)}
             </a>
           </div>
           <div className="flex items-center gap-4 overflow-x-auto no-scrollbar pb-2">
